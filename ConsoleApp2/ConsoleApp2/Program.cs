@@ -12,8 +12,8 @@ namespace ConsoleApp2
         }
         static string deleter(ref string sentence)
         {
-            string sentence2 = sentence.Replace(" ","");
-            return sentence2;
+            sentence= sentence.Replace(" ","");
+            return sentence;
         }
     }
 }
