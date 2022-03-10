@@ -8,12 +8,19 @@ namespace ConsoleApp2
         {
             string sentence = Console.ReadLine();
             
-            Console.WriteLine(deleter(ref sentence));
+            Console.WriteLine(deleter(sentence));
+           
         }
-        static string deleter(ref string sentence)
+        static string deleter(string sentence)
         {
-            sentence= sentence.Replace(" ","");
-            return sentence;
+            string test = "";
+           for (int i = 0; i < sentence.Length; i++)
+            {
+                if (sentence[i]!=' ')
+                    test+= sentence[i];   
+            }
+            return test;
         }
+        
     }
 }
